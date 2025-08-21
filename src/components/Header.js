@@ -1,4 +1,5 @@
 import React from "react";
+import { FiDownload } from "react-icons/fi"; // Import the icon
 import ThemeToggle from "./ThemeToggle";
 
 function Header() {
@@ -9,7 +10,7 @@ function Header() {
           Niraj Singh
         </h1>
         <div className="flex items-center gap-6">
-          <nav className="space-x-6 text-gray-700 dark:text-gray-300">
+          <nav className="space-x-6 text-gray-700 dark:text-gray-300 flex items-center">
             <a href="#about" className="hover:text-blue-500">
               About
             </a>
@@ -21,6 +22,15 @@ function Header() {
             </a>
             <a href="#contact" className="hover:text-blue-500">
               Contact
+            </a>
+            {/* Resume download link */}
+            <a
+              href="/resume.pdf"
+              download="Niraj_Singh_Resume.pdf"
+              className="flex items-center gap-1 hover:text-blue-500"
+            >
+              <FiDownload className="text-lg" />
+              Resume
             </a>
           </nav>
           <ThemeToggle />
