@@ -19,7 +19,7 @@ function Header() {
           <a href="#skills" className="hover:text-blue-500">
             Skills
           </a>
-          <a href="#projects" className="hover:text-blue-500">
+          <a href="#FeaturedProjects" className="hover:text-blue-500">
             Projects
           </a>
           <a href="#contact" className="hover:text-blue-500">
@@ -66,7 +66,7 @@ function Header() {
             Skills
           </a>
           <a
-            href="#projects"
+            href="#FeaturedProjects"
             className="block hover:text-blue-500"
             onClick={() => setIsOpen(false)}
           >

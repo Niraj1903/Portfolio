@@ -36,7 +36,10 @@ function FeaturedProjects() {
   const [activeProject, setActiveProject] = useState(null);
 
   return (
-    <section className="py-10 bg-gray-900 text-white relative">
+    <section
+      id="FeaturedProjects"
+      className="py-10 bg-gray-900 text-white relative"
+    >
       <h2 className="text-3xl font-bold text-center mb-6">
         🚀 Featured Projects
       </h2>
