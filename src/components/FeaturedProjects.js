@@ -41,7 +41,6 @@ function FeaturedProjects() {
         🚀 Featured Projects
       </h2>
 
-      {/* Projects Grid */}
       <div className="grid md:grid-cols-3 gap-6 px-6">
         {repos.map((repo, i) => (
           <div
@@ -69,7 +68,6 @@ function FeaturedProjects() {
         ))}
       </div>
 
-      {/* Modal */}
       {activeProject && (
         <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 px-4">
           <div className="bg-white dark:bg-gray-800 text-black dark:text-white rounded-lg max-w-4xl w-full p-6 relative">
@@ -95,7 +93,6 @@ function FeaturedProjects() {
               ))}
             </div>
 
-            {/* GitHub Link */}
             <a
               href={activeProject.link}
               target="_blank"
@@ -106,7 +103,6 @@ function FeaturedProjects() {
               View on GitHub
             </a>
 
-            {/* Live Demo Preview */}
             {activeProject.demo ? (
               <iframe
                 src={activeProject.demo}

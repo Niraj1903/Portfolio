@@ -13,7 +13,6 @@ function Contact() {
           Let’s connect and collaborate on exciting projects.
         </p>
 
-        {/* Email */}
         <div className="flex flex-col items-center gap-2 mb-4">
           <a
             href="mailto:nirajsingh1903@protonmail.com"
@@ -23,14 +22,12 @@ function Contact() {
             nirajsingh1903@protonmail.com
           </a>
 
-          {/* Phone */}
           <div className="flex items-center gap-2 text-gray-800 dark:text-gray-200">
             <FiPhone className="text-xl" />
             +91 9900426482
           </div>
         </div>
 
-        {/* CTA button */}
         <a
           href="mailto:nirajsingh1903@protonmail.com"
           className="inline-block mt-4 px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition"

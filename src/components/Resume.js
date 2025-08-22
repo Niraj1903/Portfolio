@@ -8,7 +8,6 @@ function Resume() {
           📄 Resume
         </h2>
 
-        {/* Download Button */}
         <a
           href="/resume.pdf"
           download="Niraj_Singh_Resume.pdf"
@@ -17,7 +16,6 @@ function Resume() {
           Download Resume
         </a>
 
-        {/* Preview inside page */}
         <div className="mt-10">
           <iframe
             src="/resume.pdf"
