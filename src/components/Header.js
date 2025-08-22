@@ -1,41 +1,90 @@
-import React from "react";
-import { FiDownload } from "react-icons/fi"; // Import the icon
+import React, { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 import ThemeToggle from "./ThemeToggle";
 
 function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <header className="bg-gray-100 dark:bg-gray-800 p-5 text-center md:text-left">
+    <header className="bg-gray-100 dark:bg-gray-800 p-5 shadow-md">
       <div className="max-w-6xl mx-auto flex justify-between items-center">
+        {/* Logo */}
         <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
           Niraj Singh
         </h1>
-        <div className="flex items-center gap-6">
-          <nav className="space-x-6 text-gray-700 dark:text-gray-300 flex items-center">
-            <a href="#about" className="hover:text-blue-500">
-              About
-            </a>
-            <a href="#skills" className="hover:text-blue-500">
-              Skills
-            </a>
-            <a href="#projects" className="hover:text-blue-500">
-              Projects
-            </a>
-            <a href="#contact" className="hover:text-blue-500">
-              Contact
-            </a>
-            {/* Resume download link */}
-            <a
-              href="/resume.pdf"
-              download="Niraj_Singh_Resume.pdf"
-              className="flex items-center gap-1 hover:text-blue-500"
-            >
-              <FiDownload className="text-lg" />
-              Resume
-            </a>
-          </nav>
+
+        {/* Desktop Menu */}
+        <nav className="hidden md:flex space-x-6 text-gray-700 dark:text-gray-300">
+          <a href="#about" className="hover:text-blue-500">
+            About
+          </a>
+          <a href="#skills" className="hover:text-blue-500">
+            Skills
+          </a>
+          <a href="#projects" className="hover:text-blue-500">
+            Projects
+          </a>
+          <a href="#contact" className="hover:text-blue-500">
+            Contact
+          </a>
+          <a href="#resume" className="hover:text-blue-500">
+            Resume
+          </a>
+        </nav>
+
+        {/* Right side (Theme + Hamburger) */}
+        <div className="flex items-center gap-4">
           <ThemeToggle />
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="md:hidden text-gray-700 dark:text-gray-300 text-2xl"
+          >
+            {isOpen ? <FaTimes /> : <FaBars />}
+          </button>
         </div>
       </div>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="md:hidden mt-4 space-y-4 text-center text-gray-700 dark:text-gray-300">
+          <a
+            href="#about"
+            className="block hover:text-blue-500"
+            onClick={() => setIsOpen(false)}
+          >
+            About
+          </a>
+          <a
+            href="#skills"
+            className="block hover:text-blue-500"
+            onClick={() => setIsOpen(false)}
+          >
+            Skills
+          </a>
+          <a
+            href="#projects"
+            className="block hover:text-blue-500"
+            onClick={() => setIsOpen(false)}
+          >
+            Projects
+          </a>
+          <a
+            href="#contact"
+            className="block hover:text-blue-500"
+            onClick={() => setIsOpen(false)}
+          >
+            Contact
+          </a>
+          <a
+            href="#resume"
+            className="block hover:text-blue-500"
+            onClick={() => setIsOpen(false)}
+          >
+            Resume
+          </a>
+        </div>
+      )}
     </header>
   );
 }
