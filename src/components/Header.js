@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes, FaDownload } from "react-icons/fa";
 import ThemeToggle from "./ThemeToggle";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-gray-100 dark:bg-gray-800 p-5 shadow-md">
+    <header className="bg-gray-100 dark:bg-gray-800 p-5 shadow-md sticky top-0 z-50">
       <div className="max-w-6xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
@@ -27,14 +27,24 @@ function Header() {
           <a href="#contact" className="hover:text-blue-500">
             Contact
           </a>
-          <a href="#resume" className="hover:text-blue-500">
-            Resume
-          </a>
         </nav>
 
-        {/* Right side (Theme + Hamburger) */}
+        {/* Right side (Resume + Theme + Hamburger) */}
         <div className="flex items-center gap-4">
+          {/* Resume Button (Always Visible with Icon, No Background) */}
+          <a
+            href="/resume.pdf" // <-- replace with your actual resume path
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-blue-500 font-medium"
+          >
+            <FaDownload className="text-lg" />
+            Resume
+          </a>
+
+          {/* Theme toggle */}
           <ThemeToggle />
+
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -75,13 +85,6 @@ function Header() {
             onClick={() => setIsOpen(false)}
           >
             Contact
-          </a>
-          <a
-            href="#resume"
-            className="block hover:text-blue-500"
-            onClick={() => setIsOpen(false)}
-          >
-            Resume
           </a>
         </div>
       )}
