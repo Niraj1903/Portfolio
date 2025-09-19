@@ -3,11 +3,11 @@ import { FaGithub, FaExternalLinkAlt, FaTimes } from "react-icons/fa";
 
 const repos = [
   {
-    name: "TummyCall",
+    name: "Tummy-Fuel",
     desc: "A high-performance food ordering app with live Swiggy API integration.",
-    tech: ["React", "Tailwind", "Redux"],
-    link: "https://github.com/niraj1903/tummyCall",
-    demo: "https://tubular-sorbet-85e94d.netlify.app/",
+    tech: ["React", "Tailwind", "Redux", "React-Router"],
+    link: "https://github.com/Niraj1903/Tummy-Fuel",
+    demo: "https://tummyfuel.netlify.app/",
   },
   {
     name: "Leetcode",
