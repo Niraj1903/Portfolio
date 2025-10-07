@@ -32,6 +32,7 @@ function Header() {
             href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
+            download="Niraj_Singh_Resume.pdf"
             className="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-blue-500 font-medium"
           >
             <FaDownload className="text-lg" />
