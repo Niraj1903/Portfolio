@@ -10,6 +10,13 @@ function Skills() {
     "CSS",
     "Jest",
     "React Testing Library",
+    "Formik",
+    "Axios",
+    "TypeScript",
+    "NPM",
+    "Babel",
+    "Parcel",
+    "Vite",
   ];
 
   return (
