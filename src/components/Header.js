@@ -1,5 +1,11 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes, FaDownload, FaGithub } from "react-icons/fa";
+import {
+  FaBars,
+  FaTimes,
+  FaDownload,
+  FaGithub,
+  FaLinkedin,
+} from "react-icons/fa";
 import ThemeToggle from "./ThemeToggle";
 
 function Header() {
@@ -29,6 +35,23 @@ function Header() {
 
         <div className="flex items-center gap-4">
           <a
+            href="https://github.com/Niraj1903"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-700 dark:text-gray-300 hover:text-blue-500 transition-colors duration-300"
+          >
+            <FaGithub className="text-xl hover:text-blue-500 transition-colors duration-300" />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/niraj1903"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-700 dark:text-gray-300 hover:text-blue-500 transition-colors duration-300"
+          >
+            <FaLinkedin className="text-xl hover:text-blue-500 transition-colors duration-300" />
+          </a>
+          <a
             href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
@@ -40,16 +63,6 @@ function Header() {
           </a>
 
           <ThemeToggle />
-
-          {/* GitHub Icon Link */}
-          <a
-            href="https://github.com/Niraj1903"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-700 dark:text-gray-300 hover:text-blue-500"
-          >
-            <FaGithub className="text-xl" />
-          </a>
 
           <button
             onClick={() => setIsOpen(!isOpen)}
