@@ -9,7 +9,7 @@ function Skills() {
     "HTML",
     "CSS",
     "Jest",
-    "React Testing Library",
+
     "Formik",
     "Axios",
     "TypeScript",
@@ -17,6 +17,7 @@ function Skills() {
     "Babel",
     "Parcel",
     "Vite",
+    "React Testing Library",
   ];
 
   return (
