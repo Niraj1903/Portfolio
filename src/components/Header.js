@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes, FaDownload } from "react-icons/fa";
+import { FaBars, FaTimes, FaDownload, FaGithub } from "react-icons/fa";
 import ThemeToggle from "./ThemeToggle";
 
 function Header() {
@@ -40,6 +40,16 @@ function Header() {
           </a>
 
           <ThemeToggle />
+
+          {/* GitHub Icon Link */}
+          <a
+            href="https://github.com/Niraj1903"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-700 dark:text-gray-300 hover:text-blue-500"
+          >
+            <FaGithub className="text-xl" />
+          </a>
 
           <button
             onClick={() => setIsOpen(!isOpen)}
