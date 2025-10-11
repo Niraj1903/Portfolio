@@ -9,7 +9,6 @@ function Skills() {
     "HTML",
     "CSS",
     "Jest",
-
     "Formik",
     "Axios",
     "TypeScript",
