@@ -16,7 +16,7 @@ function Skills() {
     "Babel",
     "Parcel",
     "Vite",
-    "React Testing Library",
+    "RTL",
   ];
 
   return (
