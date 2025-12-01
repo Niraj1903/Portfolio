@@ -6,6 +6,7 @@ import {
   FaGithub,
   FaLinkedin,
 } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 import ThemeToggle from "./ThemeToggle";
 
 function Header() {
@@ -41,6 +42,15 @@ function Header() {
             className="text-gray-700 dark:text-gray-300 hover:text-blue-500 transition-colors duration-300"
           >
             <FaGithub className="text-xl hover:text-blue-500 transition-colors duration-300" />
+          </a>
+
+          <a
+            href="https://leetcode.com/u/Niraj-Singh/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-700 dark:text-gray-300 hover:text-blue-500 transition-colors duration-300"
+          >
+            <SiLeetcode className="text-xl hover:text-[#00cc7a] transition-colors duration-300" />
           </a>
 
           <a
