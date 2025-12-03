@@ -20,9 +20,9 @@ import {
   SiBabel,
   SiVite,
   SiTestinglibrary,
+  SiPostman, // <-- Import added
 } from "react-icons/si";
 
-// Skills component with brand-colored icons and hover glow (Option C)
 function Skills() {
   const skills = [
     { name: "NodeJS", icon: <FaNodeJs />, color: "#3C873A" },
@@ -43,6 +43,9 @@ function Skills() {
     { name: "Parcel", icon: <FaBox />, color: "#F7A41B" },
     { name: "Vite", icon: <SiVite />, color: "#646CFF" },
     { name: "RTL", icon: <SiTestinglibrary />, color: "#E44D26" },
+
+    // ⭐ New Skill Added
+    { name: "Postman", icon: <SiPostman />, color: "#FF6C37" },
   ];
 
   return (
@@ -58,7 +61,6 @@ function Skills() {
               key={index}
               className="p-4 bg-white dark:bg-gray-700 shadow-md rounded-lg flex items-center space-x-3 text-gray-900 dark:text-white"
             >
-              {/* Icon: brand color + hover scale + glow (using currentColor for the shadow) */}
               <span
                 className="text-2xl transition-transform duration-300 hover:scale-125"
                 style={{
