@@ -11,7 +11,6 @@ import React from "react";
  *
  * Customize by passing props or replacing copy as needed.
  */
-
 export default function AboutMe({
   title = "👨‍💻 About Me",
   intro = `I am a passionate Full Stack Developer specializing in the MERN Stack, blending strong technical expertise with a keen eye for design. With hands-on experience across both frontend and backend development, I build responsive, user-friendly, and high-performance web applications.`,
