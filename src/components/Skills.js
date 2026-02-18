@@ -25,7 +25,7 @@ import {
 
 function Skills() {
   const skills = [
-    { name: "NodeJS", icon: <FaNodeJs />, color: "#3C873" },
+    { name: "NodeJS", icon: <FaNodeJs />, color: "#3C873A" },
     { name: "Express", icon: <SiExpress />, color: "#000000" },
     { name: "MongoDB", icon: <SiMongodb />, color: "#47A248" },
     { name: "ReactJS", icon: <FaReact />, color: "#61DAFB" },
