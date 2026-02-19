@@ -71,7 +71,7 @@ function Skills() {
                 {skill.icon}
               </span>
 
-              <span className="font-medium">{skill.name}</span>
+              <span className="font-medium">{skill.name} </span>
             </div>
           ))}
         </div>
