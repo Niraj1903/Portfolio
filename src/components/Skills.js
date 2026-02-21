@@ -45,7 +45,6 @@ function Skills() {
     { name: "RTL", icon: <SiTestinglibrary />, color: "#E44D26" },
 
     // ⭐ New Skill Added
-    { name: "Postman", icon: <SiPostman />, color: "#FF6C37" },
   ];
 
   return (
